@@ -1,0 +1,28 @@
+1. The principal starts the program and indicates that he/she is the principal
+2. The system displays the list of possible actions the principal can take
+3. The principal selects “approve requests”
+4. The system displays a list of pending requests
+5. The principal selects one of the pending requests
+6. The system displays the specifics of the request (time slot, group name, etc.)
+7. The system prompts the principal to approve or decline the request
+8. The principal approves the request
+9. The system stores the approved request in the schedule
+10. The system prompts the principal to keep approving requests
+11. The principal declines to keep reviewing requests
+12. The system displays the updated schedule
+
+4.1. The system informs the principal there are no pending requests
+->2.
+
+8.1. The principal declines the request
+9.1. The system prompts the principal to keep reviewing requests
+->10.
+
+11.1. The principal accepts and keeps reviewing requests
+->4.
+
+9.2. The system warns the principal of a scheduling conflict
+10.2. The system prompts the principal to deny one of the requests
+11.2. The principal chooses a request to deny
+->9.
+
